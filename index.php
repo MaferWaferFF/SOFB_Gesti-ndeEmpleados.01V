@@ -20,13 +20,9 @@
 
     <body>
 
-        <!-- <header>
-           
-        </header>
+        <!-- <header></header>
         <main></main>
-        <footer>
-            
-        </footer>
+        <footer></footer>
         Bootstrap JavaScript Libraries  -->
 
         <!--Formulario_Login-->
@@ -34,40 +30,42 @@
             <div class="row">
                 <div class="container vh-100 d-flex align-items-center"> <!--Para que se centre en la columna-->                              
                     <div class="col-md-4 mx-auto">
-                        <div class="card">
-                            <!--Título -->
-                            <div class="card-header">INICIO DE SESION</div>
-                            <!--Cuerpo-->
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <label for="input_usuario" class="form-label">Usuario</label>
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        name="input_usuario"
-                                        id="input_usuario"
-                                        aria-describedby="helpId"
-                                        placeholder="Usuario"
-                                    />
-                                    <small id="helpId" class="form-text text-muted">Escriba su usuario</small>
-                                </div> 
-                                <div class="mb-3">
-                                    <label for="input_pass" class="form-label">Password</label>
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        name="input_pass"
-                                        id="input_pass"
-                                        aria-describedby="helpId"
-                                        placeholder="Contraseña"
-                                    />
-                                    <small id="helpId" class="form-text text-muted">Escriba su contraseña</small>
-                                </div> 
-                                <button type="sumbit" class= "btn btn-primary">Iniciar Sesión</button> 
-                            </div>                                                                                                                                       
-                            <!--Pie-->
-                            <div class="card-footer text-muted">Trabajen amiguitos</div>
-                        </div>                    
+                        <form action="Vistas/Contenido/Panel/panelVista.php" method="post"> <!--lleva la información-->
+                            <div class="card">
+                                <!--Título -->
+                                <div class="card-header">INICIO DE SESION</div>
+                                <!--Cuerpo-->
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="input_usuario" class="form-label">Usuario</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="input_usuario"
+                                            id="input_usuario"
+                                            aria-describedby="helpId"
+                                            placeholder="Usuario"
+                                        />
+                                        <small id="helpId" class="form-text text-muted">Escriba su usuario</small>
+                                    </div> 
+                                    <div class="mb-3">
+                                        <label for="input_pass" class="form-label">Password</label>
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            name="input_pass"
+                                            id="input_pass"
+                                            aria-describedby="helpId"
+                                            placeholder="Contraseña"
+                                        />
+                                        <small id="helpId" class="form-text text-muted">Escriba su contraseña</small>
+                                    </div> 
+                                    <button type="sumbit" class= "btn btn-primary">Iniciar Sesión</button> 
+                                </div>                                                                                                                                       
+                                <!--Pie-->
+                                <div class="card-footer text-muted">Trabajen amiguitos</div>
+                            </div> 
+                        </form>                   
                     </div>
                 </div>                 
             </div>

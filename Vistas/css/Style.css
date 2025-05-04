@@ -7,8 +7,9 @@
     --text-title-color: #3e0449;
     --text-color: #32363B;
     --icon-color: #32363B;
-    --icon-menu-color: #3e0449;
+    --icon-menu-color: #241a25b7;
     --menu-color: #707780;
+    --background-color-userC:#4b505733;
 
     --text-select-color: #5c6f88e0;
     --background-selected: #EBF0FF;
@@ -16,7 +17,7 @@
     --background-hover-sidebar: #96b9e7e0;
 
     --border-color: #9fc5f8;
-    --border-color-navbar: #bcbfc2;
+    --border-color-navbar: #d8dce0;
 }
 
 /* Stilos Generales*/
@@ -84,7 +85,7 @@ header{
 }
 
 /* Sección de la izquierda */
-.left{    
+.left{       
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,33 +97,41 @@ header{
 
 /* Sección de la derecha */
 
-.rigth{    
+.rigth{     
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.3rem;
 }
 .rigth img{
+    width: 1.19rem;
+    margin: 0.3rem;            
+}
+.rigth img.user{
     width: 1.8rem;
     margin: 0.3rem;            
 }
-.rigth .user{
+.rigth .user{    
     width: 2,1rem;
     border-radius: 50%;
 }
-.rigth a{    
-    display: flex;
+.rigth a{        
+    display: flex;    
     justify-content: center;
     align-items: center;    
     border-radius: 5rem;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;   
+    object-fit: contain;    
 }
 .rigth a:hover{
     background-color: var(--background-hover);
 }
-.rigth .user-container{    
+.rigth .user-container{ 
+    /* background-color: var(--background-color-userC);    */
     justify-content: center;
     align-items: center;
+    padding: 0 0.4rem;
+    border-radius: 14%;
     display: flex;
     gap: 0.5rem;
 }
@@ -213,13 +222,13 @@ header{
 
 /*Principal*/
 main{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 4.5rem;
     margin-left: 6rem;
     margin-right: 2rem;
     padding: 2rem;
-    transition: padding-left 0.5s ease; 
+    transition: margin-left 0.5s ease; 
 }
 main.menu-toggle{
-    margin-left: 12rem;
+    margin-left: 12rem;    
 }
