@@ -1,0 +1,3 @@
+La bd aun no tiene el atributo para subir las imagenes de los empleados que es uno
+de los requerimientos principales.
+😥👻
