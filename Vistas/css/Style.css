@@ -18,6 +18,8 @@
 
     --border-color: #9fc5f8;
     --border-color-navbar: #d8dce0;
+
+    --background-color-text: #b0d0fa23;
 }
 
 /* Stilos Generales*/
@@ -97,7 +99,7 @@ header{
 
 /* Sección de la derecha */
 
-.rigth{     
+.rigth{         
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,14 +144,37 @@ header{
 }
 
 /* Sidebar */ 
+.sidebar-protected * {
+    all: unset;
+    font-family: "Cabin", sans-serif; 
+}
+.sidebar-protected {
+    /* all: initial; */
+    display: block !important;
+    position: fixed !important;
+    border: 2px solid var(--border-color);
+    background-color: var(--border-color);
+    margin-top: 6rem; 
+    top: 0;
+    left: 0;
+    margin-left: 1.5rem ;   
+    width: 3.9rem ; 
+    height: 80%;   
+    position: fixed; 
+    z-index: 100;
+    padding: 1.5rem 0;
+    border-radius: 20px;
+    overflow-y: auto;    
+    transition: width 0.5s ease;
+}
 .sidebar{
     border: 2px solid var(--border-color);
     background-color: var(--border-color);
-    margin-top: 6rem;
+    margin-top: 6rem; 
     top: 0;
     left: 0;
-    margin-left: 1.5rem;    
-    width: 3.9rem;
+    margin-left: 1.5rem ;   
+    width: 3.9rem ; 
     height: 80%;   
     position: fixed; 
     z-index: 100;
@@ -158,58 +183,31 @@ header{
     overflow-y: auto;    
     transition: width 0.5s ease;    
 }
-/* .sidebar{    
-    margin-top: 3rem; 
-    width: 4rem;
-    height: 100%;
-    position: fixed;
-    top: 0; 
-    left: 0;
-    z-index: 100;
-    padding: 1.1rem 0;
-    border-right: 1px solid var(--border-color);
-    overflow-y: auto;
-    background-color: var(--border-color);
-} */
 .sidebar.menu-toggle{
     width: 9.90rem; 
 }
-.sidebar a{    
+.sidebar a{       
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    padding: 1.2rem 0.7rem;
+    padding: 1.2rem 0.7rem !important;
     text-decoration: none;
-    margin: 0.2rem 0.4rem;
-    border-radius: 1.5rem;
-    white-space: nowrap;
-    overflow: hidden;
+    margin: 0.2rem 0.4rem !important;
+    border-radius: 1.5rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
     color: var(--text-color);    
 } 
-/* .sidebar a{
-    display: flex;
-    align-items: center;
-    gap: 1.3rem;
-    padding: 0.9rem 0.7rem;
-    text-decoration: none;
-    margin: 0rem 0.5rem;
-    border-radius: 0.5rem;
-    white-space:  nowrap;
-    overflow: hidden;
-    color: var(--text-color);
-} */
 .sidebar a:hover{
     background-color: var(--background-hover-sidebar);
 }
 .sidebar a.selected{    
     color: var(--text-select-color);
     background-color: var(--background-hover-sidebar);
-
 }
 .sidebar img{
     width: 1.5rem;
 } 
-
 .menu.menu-toggle div:first-child{
     transform: translateY(90%);    
 }
@@ -222,7 +220,8 @@ header{
 
 /*Principal*/
 main{
-    /* border: 2px solid red; */
+    border: 1px solid var(--border-color-navbar);
+    border-radius: 0.5rem;
     margin-top: 4.5rem;
     margin-left: 6rem;
     margin-right: 2rem;
@@ -231,4 +230,16 @@ main{
 }
 main.menu-toggle{
     margin-left: 12rem;    
+}
+
+/*Formularios*/
+form {
+    border: 1px solid var(--border-color-navbar);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+main h3{    
+    background-color: var(--background-color-text); 
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
