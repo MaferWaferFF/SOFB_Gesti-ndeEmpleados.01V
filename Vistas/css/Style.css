@@ -233,6 +233,15 @@ main.menu-toggle{
 }
 
 /*Formularios*/
+.formulario-protected * {
+    all: unset;
+    font-family: "Cabin", sans-serif; 
+}
+#main form h5.mb-3{    
+    background-color: var(--background-color-text) !important; 
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
 form {
     border: 1px solid var(--border-color-navbar);
     border-radius: 0.5rem;
